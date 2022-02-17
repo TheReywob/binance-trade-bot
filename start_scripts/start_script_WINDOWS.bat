@@ -16,6 +16,8 @@
 
 cd..
 
+echo If your bot had an error the last time you ran it, its a good idea to clear the saved data before running it again.
+echo:
 set /p rm="Remove saved data? (crypto_trading.db) [y/n]: "
 if /i %rm%==y (
 	cd data
@@ -30,3 +32,7 @@ echo Ready to start trading!
 pause
 echo Starting trade bot.
 python -m binance_trade_bot
+echo:
+echo Press any key to quit...
+pause > nul
+exit
