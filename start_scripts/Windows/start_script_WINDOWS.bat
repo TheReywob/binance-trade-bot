@@ -17,7 +17,6 @@
 cd %~dp0
 cd ..
 cd ..
-echo Current dir: %cd%
 
 echo If your bot had an error the last time you ran it, its a good idea to clear the saved data before running it again.
 echo:
@@ -34,8 +33,12 @@ echo:
 echo Ready to start trading!
 pause
 echo Starting trade bot.
+cd %~dp0
+cd ..
+cd ..
 python -m binance_trade_bot
 echo:
+echo The bot has stopped running.
 echo Press any key to quit...
 pause > nul
 exit
