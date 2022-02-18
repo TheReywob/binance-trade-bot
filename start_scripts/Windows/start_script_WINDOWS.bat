@@ -14,7 +14,7 @@
 :: ===========================
 @echo off
 
-cd %cd%
+cd %~dp0
 echo Current dir: %cd%
 
 echo If your bot had an error the last time you ran it, its a good idea to clear the saved data before running it again.
