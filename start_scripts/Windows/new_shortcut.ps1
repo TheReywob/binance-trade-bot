@@ -10,7 +10,7 @@
 $userInstallLocation = $args[0]
 $shortcutPath = "C:\Users\$env:UserName\Desktop\Binance Trade Bot.lnk"
 $iconPath = "$userInstallLocation\binance-trade-bot\start_scripts\robot_icon.ico"
-$targetPath = "$userInstallLocation\binance-trade-bot\start_scripts\start_script_WINDOWS.bat"
+$targetPath = "$userInstallLocation\binance-trade-bot\start_scripts\Windows\start_script_WINDOWS.bat"
 
 $Shell = New-Object -ComObject ("WScript.Shell")
 #Create shortcut
